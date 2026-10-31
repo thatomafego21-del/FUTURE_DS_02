@@ -18,10 +18,10 @@ This is an exploratory analysis. It summarizes patterns in the available data; i
 
 ## Tools and Technologies
 
-- **Python** for data preparation and analysis
-- **pandas** for data cleaning, grouping, and summaries
-- **NumPy** for numerical work
-- **Matplotlib** and **Seaborn** for visualizations
+- **Power BI Desktop** for the interactive dashboard and KPI reporting
+- **Python** for data preparation and exploratory analysis
+- **pandas** and **NumPy** for cleaning and numerical analysis
+- **Matplotlib** and **Seaborn** for notebook visualizations
 - **Jupyter Notebook** for documenting the analysis
 - **CSV** for the source and cleaned datasets
 
@@ -30,7 +30,7 @@ This is an exploratory analysis. It summarizes patterns in the available data; i
 The project uses the Telco Customer Churn dataset. Each row represents a customer and includes service subscriptions, account and contract information, tenure, monthly and total charges, and churn status.
 
 - Source file: `dataset/WA_Fn-UseC_-Telco-Customer-Churn.csv`
-- Cleaned output: `dataset/Customer_Churn_clean.csv`
+- Cleaned output: `dataset/Telco_Customer_Churn_cleaned.csv`
 - Customers analyzed: 7,043
 - Columns in the cleaned output: 24, including three analysis fields created in the notebook
 
@@ -54,7 +54,9 @@ I compared churn rates across tenure groups, contract types, payment methods, in
 
 ## Dashboard Features and Analysis
 
-This project does not include a separate Power BI dashboard. I present the analysis in the Jupyter Notebook using summary tables and charts, including churn distribution, churn by tenure and contract, service and payment comparisons, monthly charge groups, and tenure-versus-charge patterns.
+I built the customer churn dashboard in Power BI Desktop and saved the report as `dashboard/Task2_dashboard.pbix`. It presents the overall churn picture and allows the results to be explored across customer and service segments. The report includes headline customer and churn KPIs, churn comparisons by contract and tenure, and breakdowns by service, support, and payment characteristics. I also included a dashboard preview image at `dashboard/Task2_dashboard.png`.
+
+The report is based on the cleaned Telco dataset. Its charts are descriptive and help compare groups; they do not establish that a particular service or customer characteristic causes churn.
 
 ## Key Findings
 
@@ -82,11 +84,16 @@ These are observed associations in this dataset. They do not show that any singl
 FUTURE_DS_02/
 ├── dataset/
 │   ├── WA_Fn-UseC_-Telco-Customer-Churn.csv
-│   └── Customer_Churn_clean.csv
+│   └── Telco_Customer_Churn_cleaned.csv
 ├── notebook/
 │   └── Task_2.ipynb
+├── dashboard/
+│   ├── Task2_dashboard.pbix
+│   └── Task2_dashboard.png
 └── README.md
 ```
+
+To open the interactive report, download `dashboard/Task2_dashboard.pbix` and open it in Power BI Desktop. If prompted, point the data source to `dataset/Telco_Customer_Churn_cleaned.csv`.
 
 ## Skills Demonstrated
 
